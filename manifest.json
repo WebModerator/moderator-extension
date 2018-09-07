@@ -1,0 +1,21 @@
+{
+  "name": "Web Moderator (Pioneer Pre Alpha Version)",
+  "description": "Attempts to moderate web content before it shows in your browser",
+  "manifest_version": 2,
+  "version": "0.0.0",
+  "icons": {
+    "128": "icons/See_No_Evil_Monkey_Emoji.png"
+  },
+  "background": {
+    "scripts": [
+      "src/primus.js",
+      "src/request.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ]
+}
